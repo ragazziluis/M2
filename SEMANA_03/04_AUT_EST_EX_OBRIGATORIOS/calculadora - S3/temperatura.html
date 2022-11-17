@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/style.css">
+        <script src="js/script.js" defer></script>
+
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+
+    </head>
+    <body class="temperatura">
+        <!--INÍCIO CONTAINER-->
+        <div id="container">
+
+            <!--INÍCIO TOPO-->
+            <div id="topo">
+                <ul id="nav">
+                    <li class="primeiro"><a id="home" href="index.html">Home</a></li>
+                    <li><a id="lancamento" href="lancamento.html">Lançamento Vertical</a></li>
+                    <li><a id="pontomaximoeminimo" href="pontomaxmin.html">Ponto Máximo e Mínimo</a></li>
+                    <li><a id="temperatura" href="temperatura.html">Conversão de Temperatura</a></li>
+                    <li><a id="consumodeenergia" href="energia.html">Consumo de Energia</a></li>
+                </ul>
+            </div> <!--Fim Topo-->
+
+            <!--INÍCIO CONTEÚDO-->
+            <div id="conteudo">
+                
+                <div class="entrada">
+                    Insira a temperatura que deseja converter:
+                    <input type="number" placeholder="temperatura" id="temp">°F/°C<br>
+                    <button type="button" id="calcular" onclick="converter()">Calcular</button>
+                </div>
+                <div class="resultado" id="ctof">°C para °F</div>
+                <div class="resultado" id="ftoc">°F para °C</div>
+
+            </div> <!--Fim conteúdo-->
+        </div> <!--Fim Container-->
+    </body>
+</html>
