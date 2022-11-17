@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background: #000 url('../images/bg.png') top center no-repeat;
+}
+
+ul#menu {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+}
+
+#container-menu {
+    width: 750px;
+    text-align: center;
+    background: #09143c;
+    margin: 60px auto;
+    line-height: 100px;
+}
+
+#menu a:hover {
+    background: #c0c0c0;
+    color: #000;
+}
+
+/*NAVEGAÇÃO INTERNA*/
+#container {
+    width: 880px;
+    margin: 60px auto;
+    background: #09143c;
+    text-align: center;
+}
+
+#topo {
+    align-items: center;
+    display: flex;
+    margin-left: 10px;
+}
+
+#topo ul{
+    margin-top: 0;
+    float: left;
+    list-style: none;
+    background: #B10333;
+}
+#topo ul li {
+    float: left;
+}
+
+#topo ul a{
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color: #fff;
+    background: url(../images/divisor.png) no-repeat left center;
+}
+
+#topo ul .primeiro a {
+    background: none;
+}
+
+#topo ul a:hover {
+    color: #69001b;
+}
+
+body.lancamento #nav a#lancamento, 
+body.consumodeenergia #nav a#consumodeenergia,
+body.pontomaximoeminimo #nav a#pontomaximoeminimo,
+body.temperatura #nav a#temperatura {
+    text-decoration: underline;
+}
+
+
+/*Conteúdo*/
+#conteudo {
+    clear: both;
+    color: #fff;
+}
+
+.entrada {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.resultado {
+    border: 3px solid #000072;
+    margin: 10px auto;
+}
+
+#calcular {
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #69001b;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+#calcular:hover {
+    cursor: pointer;
+}
+
+#valor {
+    margin-left: 25px;
+}
