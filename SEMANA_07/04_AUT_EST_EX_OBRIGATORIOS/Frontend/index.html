@@ -8,11 +8,7 @@
   <link rel="stylesheet" type="text/css" href="estilo.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script>
-    $(document).ready(function () {
-      $("#principal").mouseenter(function () {
-        alert("Esse é o meu currículo, clique nos textos e imagens");
-      });
-    });
+    //Por favor rode o código no navegador com o Live Server do VSCode
     $(document).ready(function () {
       $("#imagem").click(function () {
         $("#imagem").attr("src", "taylor-swift-olivia-2-1-42239500d3a242bc8f8b3292c567a831.jpg");
@@ -60,6 +56,20 @@
         })
       })
     });
+
+    //AJAX que carrega o conteúdo de um arquivo externo
+    $(document).ready(function () {
+      $(document).ajaxStart(function () {
+        $("#wait").css("display", "block");
+      });
+      $(document).ajaxComplete(function () {
+        $("#wait").css("display", "none");
+      });
+      $("button").click(function () {
+        $("#txt").load("teste.txt");
+      });
+    });
+
   </script>
 </head>
 
@@ -106,6 +116,18 @@
             UX e programação de movimento de personagens
           </li>
         </UL>
+        <br>
+        <br>
+        <div id="txt">
+          <h2>Aperte o botão para mudar o texto</h2>
+        </div>
+
+        <button>Mudar o texto</button>
+
+        <div id="wait"
+          style="display:none;width:69px;height:89px;border:1px solid black;position:absolute;top:50%;left:50%;padding:2px;">
+          <img src='demo_wait.gif' width="64" height="64" /><br>Loading..
+        </div>
       </div>
     </div>
     <div id="rodape">
