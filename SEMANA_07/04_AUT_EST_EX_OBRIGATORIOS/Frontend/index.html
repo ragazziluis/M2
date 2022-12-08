@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <title>Currículo</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#principal").mouseenter(function () {
+        alert("Esse é o meu currículo, clique nos textos e imagens");
+      });
+    });
+    $(document).ready(function () {
+      $("#imagem").click(function () {
+        $("#imagem").attr("src", "taylor-swift-olivia-2-1-42239500d3a242bc8f8b3292c567a831.jpg");
+      });
+    });
+    $(document).ready(function () {
+      $("h1").click(function () {
+        $("h1").fadeOut(function () {
+          $("h1").text(($("h1").text() == 'Olivia Benson') ? 'Expand it' : 'Olivia Benson').fadeIn();
+        })
+      })
+    });
+    $(document).ready(function () {
+      $("#termo").click(function () {
+        $("#termo").fadeOut(function () {
+          $("#termo").text(($("#termo").text() == 'Gata da Taylor Swift') ? 'Expand it' : 'Gata da Taylor Swift').fadeIn();
+        })
+      })
+    });
+    $(document).ready(function () {
+      $("#sobre").click(function () {
+        $("#sobre").fadeOut(function () {
+          $("#sobre").text(($("#sobre").text() == 'Sobre mim') ? 'Expand it' : 'Sobre mim').fadeIn();
+        })
+      })
+    });
+    $(document).ready(function () {
+      $("h2").click(function () {
+        $("h2").fadeOut(function () {
+          $("h2").text(($("h2").text() == 'GATA MUITO FOFA') ? 'Expand it' : 'GATA MUITO FOFA').fadeIn();
+        })
+      })
+    });
+    $(document).ready(function () {
+      $("#miau").click(function () {
+        $("#miau").fadeOut(function () {
+          $("#miau").text(($("#miau").text() == 'Filha do meio da cantora Taylor Swift. Minha raça é Scottish Fold e meu patrimônio é de 97 milhões de dólares') ? 'Expand it' : 'Filha do meio da cantora Taylor Swift. Minha raça é Scottish Fold e meu patrimônio é de 97 milhões de dólares.').fadeIn();
+        })
+      })
+    });
+    $(document).ready(function () {
+      $("li").click(function () {
+        $("li").fadeOut(function () {
+          $("li").text(($("li").text() == 'miau') ? 'Expand it' : 'miau').fadeIn();
+        })
+      })
+    });
+  </script>
+</head>
+
+<body>
+  <div id="principal">
+    <div id="logo"><img src="https://www.inteli.edu.br/wp-content/uploads/2022/04/28103439/Logo-Container.png"
+        id="loginho" class="loginho" alt="loginho">
+    </div>
+    <div id="conteudo">
+      <div class="interno">
+        <h1>Luis Carlos Miranda Junior</h1>
+        <h2 class="termo" id="termo" alt="termo">Estudante de Engenharia de Software</h2>
+        <p><img src="310934697_154794127289712_8945727980786560518_n.jpg" id="imagem" alt="imagem" class="imagem"></p>
+        <h3 class="sobre" id="sobre" alt="sobre">FORMAÇÃO</h3>
+        <p class="miau" id="miau" alt="miau">INTELI - Instituto de Tecnologia e Liderança — Graduação em Engenharia de
+          Software </BR>
+          Agosto 2022 ‒ Atual
+        </p>
+      </div>
+    </div>
+    <div id="lateral">
+      <div class="interno">
+        <h2>HABILIDADES</h2>
+        <ul>
+          <li>Godot Engine - Básico</li>
+          <li>SQL - Básico</li>
+          <li>Python - Intermediário</li>
+          <li>R - Básico</li>
+          <li>AWS - Básico</li>
+          <li>DB Browser - Básico</li>
+          <li>C++ - Intermediário</li>
+          <li>JavaScript - Básico</li>
+          <li>HTML - Básico</li>
+          <li>NodeJS - Básico</li>
+        </ul>
+        <h2>EXPERIÊNCIA</h2>
+        <UL>
+          <li>MRV— Projeto Homero </BR>
+            Outubro - Dezembro 2022 <br />
+            Desenvolvimento de Front e Back-end
+          </li>
+          <li> Dell — Desenvolvimento de Jogo Sério <br />
+            Agosto 2022 ‒ Outubro 2022 <br />
+            UX e programação de movimento de personagens
+          </li>
+        </UL>
+      </div>
+    </div>
+    <div id="rodape">
+      <p>Currículo </br></p>
+    </div>
+  </div>
+</body>
+
+</html>
