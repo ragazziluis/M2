@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Valor Presente e Futuro</title>
+
+        <!-- Normalize -->
+        <link rel="stylesheet" href="../css/normalize.css">
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <!-- Style -->
+        <link rel="stylesheet" href="../css/style.css">
+
+        <!-- script -->
+        <script src="../js/script.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <form>
+                <p>Tipo de Valor: 
+                    <select onchange="trocaValor();" id="tipo">
+                        <option value="pv" selected>Valor Presente</option>
+                        <option value="fv">Valor Futuro</option>
+                    </select>
+                </p>
+                <p id="troca">Valor Futuro: R$<input type="number" id="valor" placeholder="FP"></p>
+                <p>Taxa: <input type="number" placeholder="2%" id="i">%</p>
+                <p>Tempo (meses): <input type="number" placeholder="12" id="n"></p>
+                <button onclick="valorpvfv();" id="submit" type="button" class="btn btn-info">Enviar</button>
+            </form>
+            <div id="resultado"></div>
+        </div>
+        <a href="../index.html" class="btn btn-dark" id="back">Voltar</a>
+    </body>
+</html>
